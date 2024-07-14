@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/add_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="새로운 과목 추가"
+            android:textColor="@color/purple"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <TextView
+            android:id="@+id/add_subname_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="과목명"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/purple"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/etAddSubName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="전공명을 입력하세요"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/add_professor_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="교수명" android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/purple"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/etAddProfessor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="교수명을 입력하세요"
+            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/add_division_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="분반"  android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/purple"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/etAddDivision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="분반을 입력하세요"
+            android:inputType="number"/>
+        <TextView
+            android:id="@+id/add_lectureroom_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="강의실"  android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/purple"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/etAddLectureRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="강의실을 입력하세요"
+            android:inputType="text" />
+        <TextView
+            android:id="@+id/add_coverImg_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이미지"  android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/purple"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+        <RadioGroup
+            android:id="@+id/radiogroupAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/AddradioButtonC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C" />
+
+            <RadioButton
+                android:id="@+id/AddradioButtonJava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JAVA" />
+
+            <RadioButton
+                android:id="@+id/AddradioButtonData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DATA" />
+            <RadioButton
+                android:id="@+id/AddradioButtonLinux"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LINUX" />
+            <RadioButton
+                android:id="@+id/AddradioButtonAndroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android" />
+            <RadioButton
+                android:id="@+id/AddradioButtonTheory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이론" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnAddSubject"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="추가" />
+
+        <Button
+            android:id="@+id/btnAddCancel"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="취소" />
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

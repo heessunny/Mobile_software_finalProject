@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/update_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="과목 수정"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/purple"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/update_car_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginBottom="20dp"
+            app:cardElevation="0dp">
+            <ImageView
+                android:id="@+id/update_img_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textStyle="bold"
+            android:textColor="@color/purple"/>
+
+        <EditText
+            android:id="@+id/etUpdateId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:duplicateParentState="true"
+            android:editable="false"
+            android:ems="10" />
+        <TextView
+            android:id="@+id/update_subname_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="과목명"
+            android:textStyle="bold"
+            android:textColor="@color/purple"/>
+
+        <EditText
+            android:id="@+id/etUpdateSubName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="전공명을 입력하세요"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/update_professor_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="교수명"
+            android:textStyle="bold"
+            android:textColor="@color/purple"/>
+
+        <EditText
+            android:id="@+id/etUpdateProfessor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="교수명을 입력하세요"
+            android:inputType="textPersonName" />
+        <TextView
+            android:id="@+id/update_division_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="분반"
+            android:textStyle="bold"
+            android:textColor="@color/purple"/>
+
+        <EditText
+            android:id="@+id/etUpdateDivision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="분반을 입력하세요"
+            android:inputType="number"/>
+        <TextView
+            android:id="@+id/update_lectureroom_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="강의실"
+            android:textStyle="bold"
+            android:textColor="@color/purple"/>
+
+        <EditText
+            android:id="@+id/etUpdateLectureRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="강의실을 입력하세요"
+            android:inputType="text" />
+        <TextView
+            android:id="@+id/update_coverImg_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이미지"
+            android:textStyle="bold"
+            android:textColor="@color/purple"/>
+        <RadioGroup
+            android:id="@+id/radiogroupUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/UpdateradioButtonC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="C" />
+
+            <RadioButton
+                android:id="@+id/UpdateradioButtonJava"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="JAVA" />
+
+            <RadioButton
+                android:id="@+id/UpdateradioButtonData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DATA" />
+            <RadioButton
+                android:id="@+id/UpdateradioButtonLinux"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LINUX" />
+            <RadioButton
+                android:id="@+id/UpdateradioButtonAndroid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Android" />
+            <RadioButton
+                android:id="@+id/UpdateradioButtonTheory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이론" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnUpdateSubject"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="수정" />
+
+        <Button
+            android:id="@+id/btnUpdateCancel"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="취소" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
